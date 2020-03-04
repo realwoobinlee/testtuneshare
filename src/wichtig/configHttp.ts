@@ -1,4 +1,4 @@
-export const serverurl = "http://localhost:80";
+export const serverurl = "http://h2838507.stratoserver.net";//"http://localhost:80";
 export enum TOKEN {
     ACCESS = "sngshr_usertoken",
     REFRESH = "sngshr_rf_usertoken"
