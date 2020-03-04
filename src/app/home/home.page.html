@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3>username or useremail</h3>
+  <ion-input type="text" [(ngModel)] = "usernameoruseremail" style="background-color:aquamarine"></ion-input>
+  <h3>password</h3>
+  <ion-input type="text" [(ngModel)] = "password" style="background-color:aquamarine"></ion-input>
+  <ion-button (click) = "login()"></ion-button>
+</ion-content>

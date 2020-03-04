@@ -6,4 +6,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <div>
+    <p *ngFor="let message of messages">{{message.from}}-{{message.chatroomid}}-{{message.message}}</p>
+  </div>
+  <ion-input type="text" [(ngModel)] = "receiver" style= "background-color:blanchedalmond"></ion-input> 
+  <ion-input type="text" [(ngModel)] = "outmsg" style="background-color:aquamarine"></ion-input>
+  <ion-button (click) ="sendMessage(outmsg)">send</ion-button>
+  
+</ion-content>

@@ -38,4 +38,13 @@
         <ion-label>Theme Your App</ion-label>
       </ion-item>
     </ion-list>
+    <ion-input type="text" [(ngModel)] = "username" style= "background-color:blanchedalmond"></ion-input> 
+    <ion-input type="text" [(ngModel)] = "userpassword" style="background-color:aquamarine"></ion-input>
+    <ion-button (click)= 'authorize()'> authorize </ion-button>
+    <ion-button (click)= 'play()'>{{state}}</ion-button>
+    <ion-button (click)= 'playsp()'>spplay</ion-button>
+    <ion-button (click)= 'search()'>search</ion-button>
+    <ion-button (click)= 'authorizesp()'>spotify</ion-button>
+    <ion-button (click)= 'sendvalue()'>sendval</ion-button>
+    {{ result | json}}
 </ion-content>
